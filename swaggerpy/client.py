@@ -50,7 +50,7 @@ class Operation(object):
     def __init__(self, uri, operation, http_client):
         self.uri = uri
         self.json = operation
-        self.http_client = http_client
+        self.http_client = http_client 
 
     def __repr__(self):
         return "%s(%s)" % (self.__class__.__name__, self.json['nickname'])
